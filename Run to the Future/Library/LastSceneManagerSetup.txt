@@ -1,4 +1,4 @@
 sceneSetups:
 - path: Assets/Run-to-the-future-broject.unity
-  isLoaded: 1
-  isActive: 1
+  isLoaded: 0
+  isActive: 0
