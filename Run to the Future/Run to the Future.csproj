@@ -262,6 +262,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="InteractionEngineUtility">
+      <HintPath>Assets/LeapMotion/Modules/InteractionEngine/Plugins/InteractionEngineUtility.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/Users/FinnM/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -283,11 +286,163 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/FinnM/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
-    <Reference Include="InteractionEngineUtility">
-      <HintPath>Assets/LeapMotion/Modules/InteractionEngine/Plugins/InteractionEngineUtility.dll</HintPath>
+    <Reference Include="LeapCSharp.NET3.5">
+      <HintPath>Assets/LeapMotion/Core/Plugins/LeapCSharp.NET3.5.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SlidingMax.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedFloat.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedQuaternion.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedVector3.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\CubicHermiteSpline\HermiteSpline.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\CubicHermiteSpline\HermiteSpline2.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\CubicHermiteSpline\HermiteSpline3.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Ease.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\IValueProxy.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\TransformTweenBehaviour.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Enums.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\IInterpolator.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\Interpolators\InterpolatorBases.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\Interpolators\MaterialInterpolators.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\Interpolators\TransformInterpolators.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\Interpolators\ValueInterpolators.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\TweenInstance.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\TweenRunner.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Tween.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentHand.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentHandEnableDisable.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentHands.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentPointBehaviour.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentPointFlags.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\AutoFindAttribute.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\CombinablePropertyAttribute.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\CurveBounds.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\Disable.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\DisableIf.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\EditTimeOnly.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\EnumFlags.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\ImplementsInterface.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\ImplementsTypeNameDropdownAttribute.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\Incrementable.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\MaxValue.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\MinMax.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\MinValue.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\OnEditorChange.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\UnitsAttribute.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\AssetFolder.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\DelayBuffer.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\DeltaBuffer.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Deque.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Either.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Hash.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Maybe.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\MinHeap.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\MultiTypedList.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\MultiTypedReference.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Pool.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Pose.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\ProduceConsumeBuffer.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\ReadonlyHashSet.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\ReadonlyList.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\RingBuffer.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\SerializableDictionary.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\SerializableHashSet.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\SerializableType.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\StreamingAsset.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\StreamingFolder.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Type.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\AbstractHoldDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\Detector.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\DetectorLogicGate.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\ExtendedFingerDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\FingerDirectionDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\PalmDirectionDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\PinchDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\ProximityDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\HandPool.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\HandRepresentation.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\CapsuleHand.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\DebugHand.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\FingerModel.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\HandDrop.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\HandEnableDisable.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\HandModel.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\HandModelBase.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\HandTransitionBehavior.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\RigidFinger.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\RigidHand.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\SkeletalFinger.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\SkeletalHand.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\TestHandFactory.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\LeapDeviceInfo.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\LeapHandController.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\LeapImageRetriever.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\LeapPreferences.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\LeapProvider.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\LeapServiceProvider.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Concat.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\DirectQueryExtensions.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\DirectQueryOps.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\ListAndArrayExtensions.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\OfType.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\QueryWrapper.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Repeat.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Select.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\SelectMany.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\SkipCount.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\SkipWhile.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\TakeCount.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\TakeWhile.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Values.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Where.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\WithPrevious.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Zip.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\RiggedFinger.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\RiggedHand.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Space\Definitions\LeapCylindricalSpace.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Space\Definitions\LeapRadialSpace.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Space\Definitions\LeapSphericalSpace.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Space\ISpaceComponent.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Space\ITransformer.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Space\LeapSpace.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Space\LeapSpaceAnchor.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Testing\LeapTestBase.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Testing\StationaryTestLeapProvider.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\AnimationCurveUtil.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\AssertHelper.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\BitConverterNonAlloc.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\Comment.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\ConnectionMonitor.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\DisconnectionNotice.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\EditorResources.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\EnableDepthBuffer.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\Enum.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\EnumEventTable.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\ExecutionOrder.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\FpsLabel.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\FrameRateControls.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\GuiRectUtil.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\HandUtils.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\InternalUtility.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\KeyEnableBehaviors.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\KeyEnableGameObjects.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\LeapUnityExtensions.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\ProfilerSample.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\ProgressBar.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\RuntimeColliderGizmos.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\RuntimeGizmoManager.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\RuntimeGizmoToggle.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\SingleLayer.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\Swizzle.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\TransformUtil.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\Utils.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\XRSupportUtil.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\VR\EyeType.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\VR\LeapVRCameraControl.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\VR\LeapVRTemporalWarping.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\VR\TemporalWarpingStatus.cs" />
+    <Compile Include="Assets\LeapMotion\Core\Scripts\VR\VRHeightOffset.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Examples\3. Interaction Callbacks\Scripts\TransformHandle.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Examples\3. Interaction Callbacks\Scripts\TransformRotationHandle.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Examples\3. Interaction Callbacks\Scripts\TransformTool.cs" />
@@ -345,6 +500,18 @@
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\InteractionControllerSwitcher.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\KabschSolver.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\PhysicsCallbacks.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
+    <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
+    <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />
+    <None Include="Assets\LeapMotion\Core\Resources\PassthroughBackground.shader" />
+    <None Include="Assets\LeapMotion\Core\Resources\PassthroughForeground.shader" />
+    <None Include="Assets\LeapMotion\Core\Resources\RuntimeGizmos.shader" />
+    <None Include="Assets\LeapMotion\Core\Resources\ThresholdOverlay.shader" />
+    <None Include="Assets\LeapMotion\Core\Resources\VertexOffsetShader.shader" />
+    <None Include="Assets\LeapMotion\Core\Version.txt" />
+    <None Include="Assets\LeapMotion\Core\readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

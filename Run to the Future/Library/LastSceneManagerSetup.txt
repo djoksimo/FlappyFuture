@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Run-to-the-future-broject.unity
+- path: Assets/LeapMotion/Modules/InteractionEngine/Examples/4. Hand UI/Hand UI.unity
   isLoaded: 1
   isActive: 1
