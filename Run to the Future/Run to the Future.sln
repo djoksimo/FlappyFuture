@@ -1,12 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
+<<<<<<< HEAD
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Run to the Future", "Run to the Future.csproj", "{7E273353-FC0E-C00D-C65C-51E27E9D7341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Run to the Future.Editor", "Run to the Future.Editor.csproj", "{EA45B754-32C0-9D79-B866-06BF260F1D0D}"
+EndProject
+>>>>>>> 60aae23719af7af288fb2b0426f51d8d374ad014
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
+=======
+		{7E273353-FC0E-C00D-C65C-51E27E9D7341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E273353-FC0E-C00D-C65C-51E27E9D7341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E273353-FC0E-C00D-C65C-51E27E9D7341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E273353-FC0E-C00D-C65C-51E27E9D7341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA45B754-32C0-9D79-B866-06BF260F1D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA45B754-32C0-9D79-B866-06BF260F1D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA45B754-32C0-9D79-B866-06BF260F1D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA45B754-32C0-9D79-B866-06BF260F1D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 60aae23719af7af288fb2b0426f51d8d374ad014
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
