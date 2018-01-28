@@ -247,7 +247,11 @@ a3c59ab0a4370ee52046603a838699bb Assembly-CSharp.dll:Leap.Unity.Interaction.Inte
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
+<<<<<<< HEAD
 76aba26dfa2a7176265645360a7124e7 Assembly-CSharp.dll:.playerMover
+=======
+da3a0120a362debb227e208d7f775fdc Assembly-CSharp.dll:.playerMover
+>>>>>>> c5d1445c9d24267a96ed1233a62a1dad31694b4c
 28566f5ddac8a1fb884914ba1bdf44c3 Assembly-CSharp.dll:Leap.Unity.LeapServiceProvider
 76146f063dcd7443c3c2638b16f69a84 Assembly-CSharp.dll:Leap.Unity.Interaction.InteractionSlider
 ec7197ab43ffb42a7321b609332a9861 Assembly-CSharp.dll:.GvrControllerVisualManager
@@ -304,4 +308,7 @@ d8b86f4fb9fa4c153334062c4f5a4a1d Assembly-CSharp.dll:Leap.Unity.StationaryTestLe
 e399fc54e753911801f12ac57c8fc414 Assembly-CSharp.dll:GoogleVR.GVRDemo.GVRDemoManager
 b2945430dfd6bbdb5d77043b47bf85e7 Assembly-CSharp.dll:.GvrControllerReticleVisual
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GoogleVR.VideoDemo.AutoPlayVideo
+<<<<<<< HEAD
 98d1157504457ad7d3a6f124b0918ba6 Assembly-CSharp.dll:.handsFollow
+=======
+>>>>>>> c5d1445c9d24267a96ed1233a62a1dad31694b4c
