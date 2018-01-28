@@ -292,6 +292,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FollowPlayer.cs" />
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SlidingMax.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedFloat.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedQuaternion.cs" />
@@ -501,6 +502,8 @@
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\InteractionControllerSwitcher.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\KabschSolver.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\PhysicsCallbacks.cs" />
+    <Compile Include="Assets\playerCollision.cs" />
+    <Compile Include="Assets\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
