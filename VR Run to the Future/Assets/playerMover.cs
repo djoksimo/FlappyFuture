@@ -13,7 +13,7 @@ public class playerMover : MonoBehaviour {
 
     private void Start()
     {
-        accel.Set(0, -5, 0);
+        accel.Set(0, -7, 0);
         vel.Set(0, 0, 10);
     }
 
@@ -21,9 +21,11 @@ public class playerMover : MonoBehaviour {
     {
         vel.Set(vel.x + accel.x * Time.deltaTime, vel.y + accel.y * Time.deltaTime, vel.z + accel.z * Time.deltaTime);
 
-        playerPos.position = new Vector3(playerPos.position.x + vel.x * Time.deltaTime, playerPos.position.y + vel.y * Time.deltaTime, playerPos.position.z + vel.z * Time.deltaTime);
+        if (vel.x > 0) vel.x -= 0.01f;
+        else if (vel.x < 0) vel.x += 0.01f;
 
         angle = CameraTransform.eulerAngles.z;
+        playerPos.position = new Vector3(playerPos.position.x + (vel.x - Mathf.Sin(angle*Mathf.PI / 180f)*9f) * Time.deltaTime, playerPos.position.y + vel.y * Time.deltaTime, playerPos.position.z + vel.z * Time.deltaTime);
 
         if (angle > 180)
         {
@@ -43,9 +45,6 @@ public class playerMover : MonoBehaviour {
     public void Jump()
     {
         if (Time.time - timeout < 0.5) return;
-        float i = -0.4f;
-        if (angle > 180) i = 0.4f;
-        vel.x = vel.x + Mathf.Cos(angle)*jumpConst*i;
         vel.y = vel.y + jumpConst;
         timeout = Time.time;
     }

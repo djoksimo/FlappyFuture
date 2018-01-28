@@ -625,6 +625,7 @@
     <Compile Include="Assets\Spawner.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\FREE Food Pack\Shaders\Food.shader" />
     <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoUnlitGrayscaleToColor.shader" />
