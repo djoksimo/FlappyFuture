@@ -291,7 +291,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FollowPlayer.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SlidingMax.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedFloat.cs" />
@@ -502,8 +501,12 @@
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\InteractionControllerSwitcher.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\KabschSolver.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\PhysicsCallbacks.cs" />
-    <Compile Include="Assets\playerCollision.cs" />
-    <Compile Include="Assets\PlayerMove.cs" />
+    <Compile Include="Assets\Menu.cs" />
+    <Compile Include="Assets\Scripts\Credits.cs" />
+    <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\playerCollision.cs" />
+    <Compile Include="Assets\Scripts\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\StartGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
@@ -516,6 +519,7 @@
     <None Include="Assets\LeapMotion\Core\Resources\VertexOffsetShader.shader" />
     <None Include="Assets\LeapMotion\Core\Version.txt" />
     <None Include="Assets\LeapMotion\Core\readme.txt" />
+    <None Include="Assets\Roboto\LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
