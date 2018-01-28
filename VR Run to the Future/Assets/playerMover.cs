@@ -5,9 +5,17 @@ using UnityEngine;
 public class playerMover : MonoBehaviour {
 
 	public Rigidbody playerPlane;
-	public float forceConst; 
+	public float forceConst, jumpConst;
+    public float angle = Mathf.PI / 2;
+    public 
 
-	void FixedUpdate () {
-		playerPlane.AddForce (0, 0, forceConst*Time.deltaTime);
+	void Start () {
+		playerPlane.AddForce (0, 0, forceConst);
 	}
+
+    public void Jump()
+    {
+        playerPlane.AddForce(Mathf.Cos(angle)*jumpConst, Mathf.Sin(angle) * jumpConst, 0);
+    }
+    
 }
