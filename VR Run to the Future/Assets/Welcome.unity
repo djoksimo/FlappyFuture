@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 10839467}
   - component: {fileID: 10839469}
   - component: {fileID: 10839468}
+  - component: {fileID: 10839470}
   m_Layer: 5
   m_Name: Welcome
   m_TagString: Untagged
@@ -185,6 +186,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10839466}
+--- !u!114 &10839470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10839466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0a3cf2385eb8643879dfc00a948421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &214164617
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +282,6 @@ GameObject:
   - component: {fileID: 267682416}
   - component: {fileID: 267682415}
   - component: {fileID: 267682414}
-  - component: {fileID: 267682413}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -297,17 +308,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -119}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &267682413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 267682411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d0a3cf2385eb8643879dfc00a948421, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &267682414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,12 +347,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10839466}
-        m_MethodName: 
+      - m_Target: {fileID: 10839470}
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -460,7 +460,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RUN TO THE FUTURE
+  m_Text: FLAPPY FUTURE
 --- !u!222 &281333140
 CanvasRenderer:
   m_ObjectHideFlags: 0

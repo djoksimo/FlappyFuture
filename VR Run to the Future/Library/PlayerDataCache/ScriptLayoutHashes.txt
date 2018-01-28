@@ -23,6 +23,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Leap.Unity.HandEnableDisable
 c8063074ad672db8628cb521e2cabfea Assembly-CSharp.dll:Leap.Unity.Animation.TransformTweenBehaviour
 834373787abc2c64ae41fe4643497bba Assembly-CSharp.dll:Leap.Unity.SkeletalFinger
+79f2c30d6e330d9c821c6bddc9863ed9 Assembly-CSharp.dll:.GameManager
 fe18c362a9aa836a32e78fc8df719357 Assembly-CSharp.dll:Leap.Unity.PinchDetector
 c35752b81d25e001fee445da226f3c4e Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Car.Suspension
 0df26d7642d4095bdac77a78b25e44a4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Car.BrakeLight
@@ -270,7 +271,7 @@ a3c59ab0a4370ee52046603a838699bb Assembly-CSharp.dll:Leap.Unity.Interaction.Inte
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.AlphaButtonClickMask
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
-ec7d7c5a401b26d9e2d8e6eab5fface3 Assembly-CSharp.dll:.playerMover
+e5a7f1c895c78ab5b3561ff10f1af1e3 Assembly-CSharp.dll:.playerMover
 28566f5ddac8a1fb884914ba1bdf44c3 Assembly-CSharp.dll:Leap.Unity.LeapServiceProvider
 76146f063dcd7443c3c2638b16f69a84 Assembly-CSharp.dll:Leap.Unity.Interaction.InteractionSlider
 ec7197ab43ffb42a7321b609332a9861 Assembly-CSharp.dll:.GvrControllerVisualManager
@@ -336,4 +337,3 @@ e399fc54e753911801f12ac57c8fc414 Assembly-CSharp.dll:GoogleVR.GVRDemo.GVRDemoMan
 b2945430dfd6bbdb5d77043b47bf85e7 Assembly-CSharp.dll:.GvrControllerReticleVisual
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GoogleVR.VideoDemo.AutoPlayVideo
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-79f2c30d6e330d9c821c6bddc9863ed9 Assembly-CSharp.dll:.GameManager
