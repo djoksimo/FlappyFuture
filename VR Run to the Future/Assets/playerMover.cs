@@ -7,6 +7,8 @@ public class playerMover : MonoBehaviour {
     public float angle = Mathf.PI / 2;
     public Transform CameraTransform;
 
+    public Rigidbody rb;
+
     public Vector3 accel = new Vector3(), vel = new Vector3();
 
     private float timeout = 0;
@@ -24,6 +26,11 @@ public class playerMover : MonoBehaviour {
         playerPos.position = new Vector3(playerPos.position.x + vel.x * Time.deltaTime, playerPos.position.y + vel.y * Time.deltaTime, playerPos.position.z + vel.z * Time.deltaTime);
 
         angle = CameraTransform.eulerAngles.z;
+
+        if(rb.position.y < 4f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
 
         if (angle > 180)
         {
