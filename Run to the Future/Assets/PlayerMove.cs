@@ -12,7 +12,8 @@ public class PlayerMove : MonoBehaviour {
     void FixedUpdate()
     {
         teslaPlayer.AddForce(0, 0, forwardForce * Time.deltaTime);
-        if(Input.GetKey("d")) {
+
+        if (Input.GetKey("d")) {
             teslaPlayer.AddForce(sidewaysForce * Time.deltaTime, 0, 0,ForceMode.VelocityChange);
         }
 
@@ -23,7 +24,11 @@ public class PlayerMove : MonoBehaviour {
 
         if (Input.GetKey("space"))
         {
-            teslaPlayer.AddForce(0,upwardForce * Time.deltaTime, 0);
+            teslaPlayer.AddForce(0,upwardForce * Time.deltaTime, 0, ForceMode.VelocityChange);
+        }
+        if (!Input.GetKey("space"))
+        {
+            teslaPlayer.AddForce(0, -upwardForce * Time.deltaTime, 0, ForceMode.VelocityChange);
         }
     }
 
