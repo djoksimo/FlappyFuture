@@ -7,9 +7,13 @@ public class playerMover : MonoBehaviour {
     public float angle = Mathf.PI / 2;
     public Transform CameraTransform;
 
+    public Rigidbody rb;
+
     public Vector3 accel = new Vector3(), vel = new Vector3();
 
     private float timeout = 0;
+
+    public bool hasStarted = true;
 
     private void Start()
     {
@@ -19,6 +23,8 @@ public class playerMover : MonoBehaviour {
 
     void Update()
     {
+
+        if (Time.time < 5f) return;
         vel.Set(vel.x + accel.x * Time.deltaTime, vel.y + accel.y * Time.deltaTime, vel.z + accel.z * Time.deltaTime);
 
         if (vel.x > 0) vel.x -= 0.01f;
@@ -26,6 +32,11 @@ public class playerMover : MonoBehaviour {
 
         angle = CameraTransform.eulerAngles.z;
         playerPos.position = new Vector3(playerPos.position.x + (vel.x - Mathf.Sin(angle*Mathf.PI / 180f)*9f) * Time.deltaTime, playerPos.position.y + vel.y * Time.deltaTime, playerPos.position.z + vel.z * Time.deltaTime);
+
+        if(rb.position.y < 4f || rb.position.y > 60f || rb.position.x > 25f || rb.position.x < -25f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
 
         if (angle > 180)
         {
@@ -44,7 +55,7 @@ public class playerMover : MonoBehaviour {
 
     public void Jump()
     {
-        if (Time.time - timeout < 0.5) return;
+        if (Time.time - timeout < 0.5 || Time.time < 5f) return;
         vel.y = vel.y + jumpConst;
         timeout = Time.time;
     }

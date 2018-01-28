@@ -667,6 +667,7 @@
     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+    <None Include="Assets\Stonewall\readme.txt" />
     <None Include="Assets\[BFW]SimpleDynamicClouds\ReadMe.txt" />
     <None Include="Assets\[BFW]SimpleDynamicClouds\Shaders\2DClouds.shader" />
   </ItemGroup>
